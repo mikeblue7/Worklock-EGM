@@ -564,7 +564,7 @@ contract WorkLock is Ownable {
 
         // the user with address _bonus[0] will also have the count of its downUsers as _downUsers[0]
 
-        require(msg.value == 1 ether, "Joining amount is 1 ether");
+        require(msg.value >= 1 ether, "Joining amount is 1 ether");
         require(_bonus.length <= 14, "There can be atmost 14 uplinks");
         require(_bonus.length == _downUsers.length, "The number of levels must be same");
         
