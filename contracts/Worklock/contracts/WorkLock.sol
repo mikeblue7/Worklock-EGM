@@ -590,3 +590,4 @@ contract WorkLock is Ownable {
             }
         }
 }
+}
